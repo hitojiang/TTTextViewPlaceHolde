@@ -16,6 +16,8 @@
 		8B89C2A420CA30B900746556 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89C2A320CA30B900746556 /* main.m */; };
 		8B89C2AE20CA30B900746556 /* TTTextViewPlaceHoldeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89C2AD20CA30B900746556 /* TTTextViewPlaceHoldeTests.m */; };
 		8B89C2B920CA30B900746556 /* TTTextViewPlaceHoldeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89C2B820CA30B900746556 /* TTTextViewPlaceHoldeUITests.m */; };
+		8B89C2C920CA328C00746556 /* TTAstrictCount.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89C2C720CA328C00746556 /* TTAstrictCount.m */; };
+		8B89C2CD20CA346F00746556 /* TTPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B89C2CB20CA346F00746556 /* TTPlaceHolder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		8B89C2B420CA30B900746556 /* TTTextViewPlaceHoldeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TTTextViewPlaceHoldeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B89C2B820CA30B900746556 /* TTTextViewPlaceHoldeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTTextViewPlaceHoldeUITests.m; sourceTree = "<group>"; };
 		8B89C2BA20CA30B900746556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B89C2C720CA328C00746556 /* TTAstrictCount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTAstrictCount.m; sourceTree = "<group>"; };
+		8B89C2C820CA328C00746556 /* TTAstrictCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTAstrictCount.h; sourceTree = "<group>"; };
+		8B89C2CB20CA346F00746556 /* TTPlaceHolder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTPlaceHolder.m; sourceTree = "<group>"; };
+		8B89C2CC20CA346F00746556 /* TTPlaceHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTPlaceHolder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,8 @@
 		8B89C29020CA30B700746556 /* TTTextViewPlaceHolde */ = {
 			isa = PBXGroup;
 			children = (
+				8B89C2CA20CA346F00746556 /* TTPlaceHolder */,
+				8B89C2C620CA328C00746556 /* TTLimitCounter */,
 				8B89C29120CA30B700746556 /* AppDelegate.h */,
 				8B89C29220CA30B700746556 /* AppDelegate.m */,
 				8B89C29420CA30B700746556 /* ViewController.h */,
@@ -133,6 +141,24 @@
 				8B89C2BA20CA30B900746556 /* Info.plist */,
 			);
 			path = TTTextViewPlaceHoldeUITests;
+			sourceTree = "<group>";
+		};
+		8B89C2C620CA328C00746556 /* TTLimitCounter */ = {
+			isa = PBXGroup;
+			children = (
+				8B89C2C720CA328C00746556 /* TTAstrictCount.m */,
+				8B89C2C820CA328C00746556 /* TTAstrictCount.h */,
+			);
+			path = TTLimitCounter;
+			sourceTree = "<group>";
+		};
+		8B89C2CA20CA346F00746556 /* TTPlaceHolder */ = {
+			isa = PBXGroup;
+			children = (
+				8B89C2CB20CA346F00746556 /* TTPlaceHolder.m */,
+				8B89C2CC20CA346F00746556 /* TTPlaceHolder.h */,
+			);
+			path = TTPlaceHolder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B89C2C920CA328C00746556 /* TTAstrictCount.m in Sources */,
 				8B89C29620CA30B700746556 /* ViewController.m in Sources */,
 				8B89C29C20CA30B700746556 /* TTTextViewPlaceHolde.xcdatamodeld in Sources */,
 				8B89C2A420CA30B900746556 /* main.m in Sources */,
+				8B89C2CD20CA346F00746556 /* TTPlaceHolder.m in Sources */,
 				8B89C29320CA30B700746556 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
